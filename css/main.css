@@ -115,6 +115,7 @@ p{
   color: white;
 }
 a{
+
   text-decoration: none;
   color: Blue;
 }
@@ -166,17 +167,13 @@ footer a{
 section{
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  text-align: left;
   width: 100%;
   padding-bottom: 20px;
   margin: 20px auto;
   box-shadow: 0px 0px 10px #bbb;
   background-color: Grey;
   border: 5px solid black;
-  padding:;
-  width: ;
-  height: ;
-  text-align: justify;
 }
 section h2, h3,h4{
   color: Black;
@@ -191,18 +188,17 @@ section > div{
 
    /*SECTION INFOS*/
 .moi{
-    float: left;
-    margin-top: 10px;
-    border-radius: 20px;
+    margin-bottom: 10px;
+
+    border-radius: 50px;
     border-style: solid;
 }
 .icon {
   width: 50px;
   height: 50px;
-  border: 3px solid #fff;
   box-shadow: 0px 0px 10px #777;
   border-radius: 50%;
-  margin-top: -80px;
+  margin-top: -140px;
   float: right;
 }
 
@@ -210,7 +206,7 @@ section > div{
   display: flex;
   flex-flow:  wrap;
   align-items: center;
-
+  margin-left: 10px;
   text-align: right;
 }
 .contact-flex p:first-child{
@@ -222,22 +218,24 @@ section > div{
 }
 nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin: 10px auto 0px auto;
   flex-flow: row
 }
 
    /*SECTION EXP ET FORMATION*/
 .exp{
-  text-align:  right;
-  flex-flow: row wrap;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 10px solid #bbb;
   padding-bottom: 10px;
   margin-bottom: 10px;
   font-size: 1.0;
+  background-color: grey;
+  width: 300px;
+  border: 5px solid black;
+  padding: 50px;
+  margin: 10px;
+  border-radius: 30px;
 }
-.exp img{
-  width: 100%;
 }
 .interet{
   flex: 0 1 50%;
