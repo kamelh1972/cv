@@ -100,31 +100,33 @@ textarea {
    ========================================================================== */
    /*STYLES GENERAUX*/
 *{
-   font-family: sans-serif;
+
    padding: 0px;
    margin: 0px;
    text-align: justify;
-   box-sizing: border-box;
+
 }
 body{
    background: white;
 }
 p{
   font-size: 1.0em;
-  line-height: 1em;
+  line-height: 1.2em;
   color: white;
 }
 a{
-
   text-decoration: none;
   color: Blue;
 }
+a:hover{
+  background-color: red;
+  color: purple;
+  transition: 2s;
+}
 li{
   font-size: 1em;
-  line-height: 1em;
+  line-height: 1.5em;
   color: white;
-  display: right;
-
 }
 ul{
   list-style: none;
@@ -140,12 +142,14 @@ header{
   background-color: Grey;
   border-bottom: 2px solid #fff;
   height: 120px;
+
 }
 header h1{
   text-align: center;
   color: white;
   font-size: 2.0em;
   width: 90%;
+  height: 90%;
   margin: 0 auto;
 }
 footer{
@@ -153,15 +157,16 @@ footer{
   background-image: url("");
 }
 footer p{
+  text-align: center;
   width: 90%;
   margin: 0 auto;
   color: #fff;
-  text-align: center;
   font-size: 1.2em;
 }
 footer a{
   color: #fff;
 }
+
 
    /*SECTIONS*/
 section{
@@ -175,30 +180,34 @@ section{
   background-color: Grey;
   border: 5px solid black;
 }
-section h2, h3,h4{
+section h2{
   color: Black;
-  margin: 20px 0;
+  margin: 10px 0;
   width: 90%;
-  margin-right: 10px;
   text-align: left;
+}
+section h3{
+
 }
 section > div{
   width: 90%;
 }
 
    /*SECTION INFOS*/
+.poste{
+  color: black;
+  font-size: 1.5em;
+}
 .moi{
-    margin-bottom: 10px;
-
     border-radius: 50px;
     border-style: solid;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .icon {
   width: 50px;
   height: 50px;
-  box-shadow: 0px 0px 10px #777;
-  border-radius: 50%;
-  margin-top: -140px;
+  margin-top: -180px;
   float: right;
 }
 
@@ -207,21 +216,15 @@ section > div{
   flex-flow:  wrap;
   align-items: center;
   margin-left: 10px;
-  text-align: right;
 }
 .contact-flex p:first-child{
   flex: 0 0 40%;
   text-align: left;
 }
 .contact-flex p:last-child{
-  flex: 0 0 80%;
+  flex: 0 0 60%;
 }
-nav{
-  display: flex;
-  justify-content: flex-start;
-  margin: 10px auto 0px auto;
-  flex-flow: row
-}
+
 
    /*SECTION EXP ET FORMATION*/
 .exp{
@@ -231,31 +234,51 @@ nav{
   font-size: 1.0;
   background-color: grey;
   width: 300px;
-  border: 5px solid black;
-  padding: 50px;
+  border-style :solid;
+  padding: 10px;
   margin: 10px;
   border-radius: 30px;
 }
+.Compétences{
+  border-bottom: 10px solid #bbb;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 1.0;
+  background-color: grey;
+  width: 300px;
+  border-style :solid;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  line-height: 30px;
+}
+.renseignement{
+  border-bottom: 10px solid #bbb;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 1.0;
+  background-color: grey;
+  width: 300px;
+  border-style :solid;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  line-height: 30px;
 }
 .interet{
   flex: 0 1 50%;
-  flex-flow: column wrap;
-  align-items: center;
   margin-bottom: 20px;
   color: white;
+  margin-left: 10px;
 }
-
-
-
-
     /*VERSION BUREAU DU CV*/
 @media screen and (min-width: 980px){
   section{
         width: 80%;
         box-shadow: 0px 0px 10px #bbb;
 }
-        a:hover{
-             color: #EA0;
+a:hover{
+        color: #EA0;
 }
   header h1{
         width: 80%;
